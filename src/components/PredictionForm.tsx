@@ -22,11 +22,11 @@ const PredictionForm = ({ onSubmit }: { onSubmit: (data: any) => void }) => {
     <Card className="w-full max-w-md p-6 bg-white rounded-lg shadow-sm animate-fadeIn">
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="space-y-2">
-          <Label htmlFor="age">Age</Label>
+          <Label htmlFor="age">Usia</Label>
           <Input
             id="age"
             type="number"
-            placeholder="Enter age"
+            placeholder="Masukkan usia"
             value={formData.age}
             onChange={(e) => setFormData({ ...formData, age: e.target.value })}
             className="w-full"
@@ -34,12 +34,12 @@ const PredictionForm = ({ onSubmit }: { onSubmit: (data: any) => void }) => {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="temperature">Temperature (°C)</Label>
+          <Label htmlFor="temperature">Suhu Badan (°C)</Label>
           <Input
             id="temperature"
             type="number"
             step="0.1"
-            placeholder="Enter body temperature"
+            placeholder="Masukkan suhu badan"
             value={formData.temperature}
             onChange={(e) => setFormData({ ...formData, temperature: e.target.value })}
             className="w-full"
@@ -47,11 +47,11 @@ const PredictionForm = ({ onSubmit }: { onSubmit: (data: any) => void }) => {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="heartRate">Heart Rate (BPM)</Label>
+          <Label htmlFor="heartRate">Detak Jantung (BPM)</Label>
           <Input
             id="heartRate"
             type="number"
-            placeholder="Enter heart rate"
+            placeholder="Masukkan detak jantung"
             value={formData.heartRate}
             onChange={(e) => setFormData({ ...formData, heartRate: e.target.value })}
             className="w-full"
@@ -59,11 +59,11 @@ const PredictionForm = ({ onSubmit }: { onSubmit: (data: any) => void }) => {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="bloodPressure">Blood Pressure (mmHg)</Label>
+          <Label htmlFor="bloodPressure">Tekanan Darah (mmHg)</Label>
           <Input
             id="bloodPressure"
             type="text"
-            placeholder="e.g., 120/80"
+            placeholder="contoh: 120/80"
             value={formData.bloodPressure}
             onChange={(e) => setFormData({ ...formData, bloodPressure: e.target.value })}
             className="w-full"
@@ -74,7 +74,7 @@ const PredictionForm = ({ onSubmit }: { onSubmit: (data: any) => void }) => {
           type="submit"
           className="w-full bg-medical-primary hover:bg-medical-accent transition-colors"
         >
-          Predict
+          Prediksi
         </Button>
       </form>
     </Card>

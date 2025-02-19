@@ -18,11 +18,11 @@ const ResultsDisplay = ({ result }: ResultsDisplayProps) => {
         <div className="flex justify-center">
           <CheckCircle className="h-12 w-12 text-medical-primary" />
         </div>
-        <h3 className="text-xl font-semibold text-gray-800">Prediction Result</h3>
+        <h3 className="text-xl font-semibold text-gray-800">Hasil Prediksi</h3>
         <div className="space-y-2">
           <p className="text-lg text-medical-accent">{result.prediction}</p>
           <p className="text-sm text-gray-600">
-            Confidence: {(result.probability * 100).toFixed(2)}%
+            Tingkat Kepercayaan: {(result.probability * 100).toFixed(2)}%
           </p>
         </div>
       </div>

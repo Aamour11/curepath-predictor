@@ -12,20 +12,19 @@ const Index = () => {
   const handlePrediction = async (formData: any) => {
     try {
       // This is where we'll integrate with the Python backend later
-      // For now, we'll show a mock result
       setResult({
-        prediction: "Sample Prediction",
+        prediction: "Hasil Prediksi",
         probability: 0.85,
       });
       
       toast({
-        title: "Prediction Complete",
-        description: "Your results are ready to view.",
+        title: "Prediksi Selesai",
+        description: "Hasil prediksi Anda siap untuk dilihat.",
       });
     } catch (error) {
       toast({
         title: "Error",
-        description: "Failed to process prediction. Please try again.",
+        description: "Gagal memproses prediksi. Silakan coba lagi.",
         variant: "destructive",
       });
     }
@@ -36,9 +35,9 @@ const Index = () => {
       <Header />
       <main className="container mx-auto px-4 py-12">
         <div className="text-center mb-12 space-y-4 animate-fadeIn">
-          <h2 className="text-4xl font-bold text-gray-800">Disease Prediction System</h2>
+          <h2 className="text-4xl font-bold text-gray-800">Sistem Prediksi Penyakit</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Enter your medical parameters below for an AI-powered disease prediction using advanced machine learning algorithms.
+            Masukkan parameter medis Anda di bawah ini untuk prediksi penyakit berbasis AI menggunakan algoritma pembelajaran mesin canggih.
           </p>
         </div>
         
